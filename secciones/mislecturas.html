@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <title>Mis lecturas | IbReeds</title>
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <a class="inicioLogo" href="../index.html">
+                <img src="https://img.icons8.com/plasticine/70/000000/books.png"/>
+            </a>
+            <a class="botónLogin" href="login.html">Login</a>
+            <a class="iconoAyuda" href="ayuda.html">
+                <img src="https://img.icons8.com/dusk/39/000000/technical-support.png"/>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="navMisLecturas">
+                    <a href="mislecturas.html">Mis lecturas</a>
+                </li>
+                <li class="navRecomendaciones">
+                    <a href="recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="navTienda">
+                    <a href="tienda.html">Tienda</a>
+                </li>
+                <li class="navComunidad">
+                    <a href="comunidad.html">Comunidad</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="avisos">
+                <p>Acá encontrarás tus listas de libros que ya leíste, los que quieras leer, los libros de tu lista de deseos y más.</p>
+            </div>
+        </section>
+        <section class="formulariosGrid">
+            <section class="formulariosLecturas">
+                <div>
+                    <h5 class="títuloLecturas">Lectura actual</h5>
+                </div>
+                <form action="#">
+                    <div class="casillasLecturas">
+                        <input type="text" name="lecturasTítulo" placeholder="Título">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="text" name="lecturasAutor" placeholder="Autor">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="text" name="totalPáginas" placeholder="Total de páginas">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="text" name="páginasLeidas" placeholder="Páginas leidas">
+                    </div>
+                    <div class="casillasLecturas">
+                        <textarea name="pensamientosGenerales" cols="30" rows="10" placeholder="¿Qué te está pareciendo?"></textarea>
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="submit" name="agregarLibro" value="Agregar libro">
+                    </div>
+                </form>
+            </section>
+            <section class="formulariosLecturas">
+                <div>
+                    <h5 class="títuloLecturas">Libros leídos</h5>
+                </div>
+                <form action="#">
+                    <div class="casillasLecturas">
+                        <input type="text" name="leídosTítulo" placeholder="Título">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="text" name="leídosAutor" placeholder="Autor">
+                    </div>
+                    <div class="casillasLecturas">
+                        ¿Cuantas estrallas le das?
+                        <select class="estrellas" name="estrallas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                    </div>
+                    <div class="casillasLecturas">
+                        <textarea name="reseñaLeído" cols="30" rows="10" placeholder="Deja tu reseña"></textarea>
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="submit" name="agregarLeído" value="Agregar libro">
+                    </div>
+                </form>
+            </section>
+            <section class="formulariosLecturas">
+                <div>
+                    <h5 class="títuloLecturas">Libros por leer</h5>
+                </div>
+                <form action="#">
+                    <div class="casillasLecturas">
+                        <input type="text" name="porLeerTítulo" placeholder="Título">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="text" name="porLeerAutor" placeholder="Autor">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="submit" name="agregarLista" value="Agregar a la lista">
+                    </div>
+                </form>
+            </section>
+            <section class="formulariosLecturas">
+                <div>
+                    <h5 class="títuloLecturas">Meta de lecturas del año</h5>
+                </div>
+                <form action="#">
+                    <div class="casillasLecturas">
+                        Meta del año
+                        <input type="number" name="metaAño">
+                    </div>
+                    <div class="casillasLecturas">
+                        Meta del mes
+                        <input type="number" name="metaMes">
+                    </div>
+                    <div class="casillasLecturas">
+                        Total de libros leídos hasta ahora
+                        <input type="number" name="librosLeídos">
+                    </div>
+                    <div class="casillasLecturas">
+                        <input type="submit" name="metaLecturas" value="Guardar">
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/somosibreeds/" target="_blank">
+                <img src="https://img.icons8.com/stickers/40/000000/instagram-new--v1.png"/>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UCaRVYsYZZpmmFixWzeiTu7w" target="_blank">
+                <img src="https://img.icons8.com/dusk/40/000000/youtube--v2.png"/>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.coderhouse.com/?utm_term=coderhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc" target="_blank">
+                <img src="https://img.icons8.com/plasticine/40/000000/html.png"/>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 228, 232);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#grillaInicio{
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "ayuda"
+    "login"
+    "botónLecturas"
+    "botónRecomendaciones"
+    "botónTienda"
+    "botónComunidad"
+    "eslogan"
+    "librosDelMes"
+    "librosMesGrid"
+    "footer";
+}
+header{
+    background-color: rgb(213, 230, 235);
+    padding: 27px;
+}
+nav ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(14, 91, 91);
+}
+.navBar{
+    display: flex;
+    align-items: center;
+}
+.inicioLogo{
+    grid-area: logo;
+    margin-right: 30px;
+}
+.botónLogin{
+    grid-area: login;
+    padding: 10px;
+    margin: 30px;
+    border: 2px double rgb(134, 197, 162);
+    border-radius: 23px;
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    background-color: rgb(150, 231, 204);
+}
+.botónLogin:hover{
+    background-color: rgb(192, 223, 212);
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.iconoAyuda{
+    grid-area: ayuda;
+    margin: 30px;
+}
+.iconoAyuda:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navMisLecturas{
+    grid-area: botónLecturas;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: 2px double rgb(255, 126, 147);
+    border-radius: 23px;
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    background-color: rgb(255, 192, 203);
+}
+.navMisLecturas:hover{
+    background-color: rgb(255, 209, 217);
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navRecomendaciones{
+    grid-area: botónRecomendaciones;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: 2px double rgb(255, 126, 147);
+    border-radius: 23px;
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    background-color: rgb(255, 192, 203);
+}
+.navRecomendaciones:hover{
+    background-color: rgb(255, 209, 217);
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navTienda{
+    grid-area: botónTienda;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: 2px double rgb(255, 126, 147);
+    border-radius: 23px;
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    background-color: rgb(255, 192, 203);
+}
+.navTienda:hover{
+    background-color: rgb(255, 209, 217);
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navComunidad{
+    grid-area: botónComunidad;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: 2px double rgb(255, 126, 147);
+    border-radius: 23px;
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    background-color: rgb(255, 192, 203);
+}
+.navComunidad:hover{
+    background-color: rgb(255, 209, 217);
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(213, 230, 235);
+    padding: 27px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.eslogan{
+    grid-area: eslogan;
+}
+h1{
+    padding: 20px 10px 20px 10px;
+    margin: 37px;
+    text-align: center;
+    font-size: 33px;
+    color: rgb(9, 9, 59)
+}
+.librosDelMes{
+    grid-area: librosDelMes;
+}
+h2{
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 107)
+}
+.librosMesGrid{
+    grid-area:librosMesGrid;
+}
+.títulosInicio{
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 84);
+}
+.portadas{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    overflow: hidden;
+    width: 57%;
+    height: 82%;
+    background-color: rgb(243, 243, 243);
+}
+.portadas.grupoA{
+    border: 5px double rgb(79, 187, 151);
+}
+.portadas.grupoB{
+    border: 5px double palevioletred;
+}
+.títulos{
+    color: rgb(0, 0, 67);
+}
+.galeríaLibros{
+    display: grid;
+    justify-items: center;
+}
+.autoresArgentinos{
+    margin: 50px;
+    background-color: rgb(254, 209, 217);
+    border-radius: 23px;
+    border: 5px double palevioletred;
+    box-shadow: 5px 5px rgb(189, 113, 138);
+}
+.ficciónPersonal{
+    margin: 50px;
+    background-color: rgb(191, 247, 228);
+    border-radius: 23px;
+    border: 5px double rgb(87, 166, 140);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+}
+.distopías{
+    margin: 50px;
+    background-color: rgb(254, 209, 217);
+    border-radius: 23px;
+    border: 5px double palevioletred;
+    box-shadow: 5px 5px rgb(189, 113, 138);
+}
+.infantiles{
+    margin: 50px;
+    background-color: rgb(191, 247, 228);
+    border-radius: 23px;
+    border: 5px double rgb(87, 166, 140);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+}
+.fantasía{
+    margin: 50px;
+    background-color: rgb(254, 209, 217);
+    border-radius: 23px;
+    border: 5px double palevioletred;
+    box-shadow: 5px 5px rgb(189, 113, 138);
+}
+.contextoHistórico{
+    margin: 50px;
+    background-color: rgb(191, 247, 228);
+    border-radius: 23px;
+    border: 5px double rgb(87, 166, 140);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+}
+.ayudaGrid{
+    display: grid;
+    grid-template-areas:
+    "títuloAyuda"
+    "guía"
+    "formulario"
+    "exampleAyuda"
+    "preguntasAyuda";
+}
+.títuloAyuda{
+    grid-area: títuloAyuda;
+}
+h3{
+    padding: 20px 10px 20px 10px;
+    margin: 27px;
+    text-align: center;
+    font-size: 27px;
+    color: rgb(0, 0, 97)
+}
+.guía{
+    grid-area: guía;
+    padding: 21px;
+    margin: 30px;
+    border: 5px double rgb(174, 112, 216);
+    background-color: rgb(237, 220, 252);
+    box-shadow: 5px 5px rgb(136, 116, 154);
+}
+h4{
+    margin: 12px;
+    font-size: 23px;
+    color: rgb(0, 0, 87)
+}
+.formulario{
+    grid-area: formulario;
+    margin: 30px;
+    border: 5px double rgb(174, 112, 216);
+    background-color: rgb(237, 220, 252);
+    box-shadow: 5px 5px rgb(136, 116, 154);
+}
+.formularioOpción{
+    margin: 17px;
+}
+h5{
+    margin: 7px;
+    font-size: 20px;
+    color: rgb(0, 0, 47);
+}
+p{
+    margin: 10px;
+    font-size: 20px;
+}
+.correoContacto{
+    color: rgb(14, 91, 91);
+}
+.exampleAyuda{
+    grid-area: exampleAyuda;
+    margin: 20px;
+    border: 5px double rgb(174, 112, 216);
+    background-color: rgb(237, 220, 252);
+    box-shadow: 5px 5px rgb(136, 116, 154);
+}
+.preguntasAyuda{
+    grid-area: preguntasAyuda;
+}
+.objetivoComunidad{
+    margin: 37px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 0, 67);
+}
+.parrafoCentrado{
+    margin: 10px;
+    text-align: center;
+}
+.botonesComunidad{
+    margin: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.botónComunidad{
+    padding: 17px;
+    text-align: center;
+}
+.formularioLogin{
+    margin: 30px;
+    border: 5px double palevioletred;
+    background-color: rgb(254, 209, 217);
+    box-shadow: 5px 5px rgb(189, 113, 138);
+    text-align: center;
+}
+.casillasLogin{
+    margin: 12px;
+}
+.avisos{
+    padding: 5px;
+    margin: 80px;
+    border: 2px dashed pink;
+    text-align: center;
+}
+.formulariosLecturas{
+    margin: 30px;
+    padding: 10px;
+    border: 5px double palevioletred;
+    background-color: rgb(254, 209, 217);
+    box-shadow: 5px 5px rgb(189, 113, 138);
+}
+.títuloLecturas{
+    text-align: center;
+}
+.casillasLecturas{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.estrellas{
+    margin-bottom: 10px;
+}
+.videoAviso{
+    margin: 75px 40px 40px 40px;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(0, 0, 67);
+}
+.galeríaVideos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+}
+.videos{
+    margin: 20px;
+    padding: 12px;
+    background-color: rgb(191, 247, 228);
+    border-radius: 23px;
+    border: 5px double rgb(87, 166, 140);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+}
+.proyectoIbreeds{
+    margin: 17px;
+    background-color: rgb(187, 234, 239);
+    border-radius: 23px;
+    border: 5px double rgb(87, 162, 166);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "título"
+    "imagen"
+    "parrafo1"
+    "parrafo2"
+    "parrafo3"
+    "parrafo4";
+}
+.títuloProyecto{
+    grid-area: título;
+}
+.imagenProyecto{
+    grid-area: imagen;
+}
+.parrafoProyecto1{
+    grid-area: parrafo1;
+}
+.parrafoProyecto2{
+    grid-area: parrafo2;
+}
+.parrafoProyecto3{
+    grid-area: parrafo3;
+}
+.parrafoProyecto4{
+    grid-area: parrafo4;
+}
+.galeríaTienda{
+    display: grid;
+    grid-template-areas:
+    "títuloNovedades"
+    "novedades"
+    "títuloBestSeller"
+    "bestSeller"
+    "títuloAudiolibros"
+    "audiolibros"
+    "títuloEBooks"
+    "ebooks"
+    "títuloMercancía"
+    "mercancía"
+    "títuloExample"
+    "example"
+    ;
+}
+.seccionesTienda{
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 84);
+}
+.seccionesTienda.títuloNovedades{
+    grid-area: títuloNovedades;
+}
+.seccionesTienda.títuloBestSeller{
+    grid-area: títuloBestSeller;
+}
+.seccionesTienda.títuloAudiolibros{
+    grid-area: títuloAudiolibros;
+}
+.seccionesTienda.títuloEBooks{
+    grid-area: títuloEBooks;
+}
+.seccionesTienda.títuloMercancía{
+    grid-area: títuloMercancía;
+}
+.seccionesTienda.títuloExample{
+    grid-area: títuloExample;
+}
+.novedadesMes{
+    grid-area: novedades;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.portadas.grupoC{
+    border: 5px double rgb(174, 174, 174);
+}    
+.bestSeller{
+    grid-area: bestSeller;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.audiolibros{
+    grid-area: audiolibros;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.eBooks{
+    grid-area: ebooks;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.mercancía{
+    grid-area: mercancía;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.imagenesMerch{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    width: 57%;
+    height: 82%;
+    background-color: rgb(243, 243, 243);
+    border: 5px double rgb(75, 154, 127);
+}
+.exampleTienda{
+    grid-area: example;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: rgb(234, 209, 254);
+    border-radius: 23px;
+    border: 5px double rgb(201, 160, 236);
+    box-shadow: 5px 5px rgb(149, 123, 170);
+}
+.exampleImg{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    width: 57%;
+    height: 82%;
+    background-color: rgb(243, 243, 243);
+    border: 5px double rgb(75, 96, 154);
+}
+@media (min-width:640px){
+    .botónComunidad:hover{
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    #grillaInicio{
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "ayuda"
+        "login"
+        "botonesNav"
+        "eslogan"
+        "librosDelMes"
+        "librosMesGrid"
+        "footer";
+    }
+    nav ul{
+        grid-area: botonesNav;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: larger;
+    }
+    .botónLogin{
+        margin: 25px;
+        text-align: center;
+    }
+    .iconoAyuda{
+        margin: 41px;
+        display: flex;
+        justify-content: center;
+    }
+    .navBar{
+        display: grid;
+        grid-template-areas:
+        "logo login ayuda";
+        grid-template-columns: 70% 20% 10%;
+    }
+    .portadas:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .imagenesMerch:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .exampleImg:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .formulariosGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .formularioLogin{
+        margin: 30px 15%;
+    }
+    .videos{
+        width: 380px;
+        height: 195px;
+        display: flex;
+        justify-content: center;
+    }  
+}
+@media (min-width:1000px){
+    .botónLogin{
+        margin: 35px;
+        margin-left: 85px;
+    }
+    .galeríaLibros{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .ayudaGrid{
+        grid-template-areas:
+        "títuloAyuda títuloAyuda títuloAyuda"
+        "guía formulario exampleAyuda"
+        "guía preguntasAyuda exampleAyuda";
+    }
+    .formularioLogin{
+        margin: 30px 31%;
+    }
+    .formulariosLecturas{
+        width: 325px;
+    }
+    .casillasLecturas{
+        width: 300px;
+    }
+    .galeríaVideos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .videos{
+        width: 420px;
+        height: 235px;
+    }
+    .proyectoIbreeds{
+        margin: 70px;
+        grid-template-areas:
+        "título título título"
+        "parrafo1 parrafo1 imagen"
+        "parrafo2 parrafo3 parrafo4";
+    }
+    .novedadesMes{
+        display: flex;
+        flex-direction: row;
+    }
+    .bestSeller{
+        display: flex;
+        flex-direction: row;
+    }
+    .audiolibros{
+        display: flex;
+        flex-direction: row;
+    }
+    .eBooks{
+        display: flex;
+        flex-direction: row;
+    }
+    .mercancía{
+        display: flex;
+        flex-direction: row;
+    }
+    .exampleTienda{
+        display: flex;
+        flex-direction: row;
+    }
+}
