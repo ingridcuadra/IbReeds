@@ -373,6 +373,8 @@ p{
     border-radius: 23px;
     border: 5px double rgb(87, 166, 140);
     box-shadow: 5px 5px rgb(108, 162, 144);
+    display: flex;
+    justify-content: center;
 }
 .proyectoIbreeds{
     margin: 17px;
@@ -606,8 +608,10 @@ p{
     .videos{
         width: 380px;
         height: 195px;
-        display: flex;
-        justify-content: center;
+    }
+    iframe{
+        width: 360px;
+        height: 175px;
     }  
 }
 @media (min-width:1000px){
@@ -641,6 +645,10 @@ p{
     .videos{
         width: 420px;
         height: 235px;
+    }
+    iframe{
+        width:400px;
+        height: 215px;
     }
     .proyectoIbreeds{
         margin: 70px;
