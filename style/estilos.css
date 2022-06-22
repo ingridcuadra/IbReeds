@@ -14,9 +14,7 @@ body{
 #grillaInicio{
     display: grid;
     grid-template-areas:
-    "logo"
-    "ayuda"
-    "login"
+    "navBar"
     "botónLecturas"
     "botónRecomendaciones"
     "botónTienda"
@@ -38,12 +36,21 @@ a{
     color: rgb(14, 91, 91);
 }
 .navBar{
-    display: flex;
-    align-items: center;
+    grid-area: navBar;
+    display: grid;
+    grid-template-areas:
+    "logo logo"
+    "login ayuda"
+    "barraBúsqueda barraBúsqueda";
+    justify-items: center;
 }
 .inicioLogo{
     grid-area: logo;
-    margin-right: 30px;
+    margin: 30px 10px 10px;
+}
+.motorNavBar{
+    display: flex;
+    justify-content: center;
 }
 .botónLogin{
     grid-area: login;
@@ -68,6 +75,20 @@ a{
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s;
+}
+.barraBúsqueda{
+    grid-area: barraBúsqueda;
+    padding: 10px;
+    margin: 7px;
+}
+.casillaBúsqueda{
+    width: 210px;
+    height: 29px;
+    border-radius: 7px;
+}
+.botónBúsqueda{
+    padding: 5px;
+    height: 29px;
 }
 .navMisLecturas{
     grid-area: botónLecturas;
@@ -141,6 +162,15 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.iconoMotor{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(243, 221, 191);
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px double rgb(204, 111, 126); 
 }
 .eslogan{
     grid-area: eslogan;
@@ -377,7 +407,7 @@ p{
     justify-content: center;
 }
 .proyectoIbreeds{
-    margin: 17px;
+    margin: 30px;
     background-color: rgb(187, 234, 239);
     border-radius: 23px;
     border: 5px double rgb(87, 162, 166);
@@ -410,6 +440,17 @@ p{
 }
 .parrafoProyecto4{
     grid-area: parrafo4;
+}
+.formularioMotor{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(187, 234, 239);
+    border-radius: 23px;
+    border: 5px double rgb(87, 162, 166);
+    box-shadow: 5px 5px rgb(108, 162, 144);
+}
+.pFormMotor{
+    text-align: center;
 }
 .galeríaTienda{
     display: grid;
@@ -550,9 +591,7 @@ p{
     #grillaInicio{
         display: grid;
         grid-template-areas:
-        "logo"
-        "ayuda"
-        "login"
+        "navBar"
         "botonesNav"
         "eslogan"
         "librosDelMes"
@@ -566,8 +605,17 @@ p{
         justify-content: center;
         font-size: larger;
     }
+    .navBar{
+        grid-template-areas:
+        "login logo ayuda"
+        "barraBúsqueda barraBúsqueda barraBúsqueda";
+        justify-items: center;
+    }
+    .inicioLogo{
+        margin: 10px;
+    }
     .botónLogin{
-        margin: 25px;
+        margin: 41px;
         text-align: center;
     }
     .iconoAyuda{
@@ -575,11 +623,8 @@ p{
         display: flex;
         justify-content: center;
     }
-    .navBar{
-        display: grid;
-        grid-template-areas:
-        "logo login ayuda";
-        grid-template-columns: 70% 20% 10%;
+    .casillaBúsqueda{
+        width: 350px;
     }
     .portadas:hover{
         transform: scale(1.05);
@@ -612,12 +657,34 @@ p{
     iframe{
         width: 360px;
         height: 175px;
-    }  
+    }
+    .proyectoIbreeds{
+        margin: 60px;
+    }
+    .formularioMotor{
+        margin: 60px;
+    } 
 }
 @media (min-width:1000px){
-    .botónLogin{
-        margin: 35px;
-        margin-left: 85px;
+    .navBar{
+        grid-template-areas:
+        "logo barraBúsqueda login ayuda";
+        grid-template-columns: 25% 45% 15% 15%;
+        align-items: center;
+    }
+    .inicioLogo{
+        margin-right: 105px;
+    }
+    .motorNavBar{
+        margin: 10px;
+    }
+    .casillaBúsqueda{
+        width: 300px;
+        height: 35px;
+    }
+    .botónBúsqueda{
+        padding: 5px;
+        height: 35px;
     }
     .galeríaLibros{
         grid-template-columns: 1fr 1fr 1fr;
@@ -656,6 +723,9 @@ p{
         "título título título"
         "parrafo1 parrafo1 imagen"
         "parrafo2 parrafo3 parrafo4";
+    }
+    .fotmularioMotor{
+        margin: 70px;
     }
     .novedadesMes{
         display: flex;

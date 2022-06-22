@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/estilos.css">
     <title>Tienda | IbReeds</title>
 </head>
@@ -18,6 +17,10 @@
             <a class="iconoAyuda" href="ayuda.html">
                 <img src="https://img.icons8.com/dusk/39/000000/technical-support.png"/>
             </a>
+            <form class="barraBúsqueda">
+                <input class="casillaBúsqueda" type="search" placeholder="Encuentra una nueva lectura">
+                <button class="botónBúsqueda" type="submit">Buscar</button>
+            </form>
         </div>
         <nav>
             <ul>
@@ -37,19 +40,16 @@
         </nav>
     </header>
     <main>
+        <div>
+            <a class="iconoMotor" href="motoribreeds.html" target="_blank">
+                <img src="https://img.icons8.com/dusk/50/000000/recycle-sign.png"/>
+            </a>
+        </div>
         <section>
             <div class="avisos">
                 <p>Acá vas a encontrar todos los libros que desees agregar a tu biblioteca.</p>
             </div>
         </section>
-        <article data-aos="zoom-in-up" class="proyectoIbreeds">
-            <h3 class="títuloProyecto">El motor de IbReeds</h3>
-            <p class="parrafoProyecto1">En IbReeds creemos en un futuro sustentable. Es por eso que trabajamos todos los días para poder hacer realidad este proyecto. IbReeds aspira a contar con una editorial que utilice papel reciclado para crear nuevos libros. Con la filosofía de crear historias a partir de otras historias, IbReeds busca reutilizar todo el papel que le sea posible para poder imprimir cada una de las páginas que formarán los libros que llegarán a nuevas personas. De esta manera, incluso libros ya leíste se pueden convertir en libros que relatarán nuevas aventuras que esperarán con ansias ser leídas. IbReeds, ofrecerá en su tienda libros hechos 100% con papel reciclado, e-books, audiolibros y mercancía hecha de manera artesanal de tus libros favoritos.</p>
-            <img class="imagenProyecto" src="../img/papelreciclado3.png" alt="tacho de reciclaje" height="290">
-            <p class="parrafoProyecto2">Esperamos en un futuro contar con la ayuda de otras editoriales, e incluso de algunos escritores, para que este proyecto crezca y pueda ser algún día a realizarse.</p>
-            <p class="parrafoProyecto3">IbReeds también busca trabajar con escritores independientes y tenderles una mano para que sus historia dejen de estar solo en sus mentes y se transformen en un libro físico.</p>
-            <p class="parrafoProyecto4">Cualquier papel se puede convertir en el libro de un soñador. La próxima vez que veas un diario, el envoltorio de una golosina, el ticket de compra del super pensá que en IbReeds puede convertirse en tu próxima lectura.</p>
-        </article>
         <section class="galeríaTienda">
             <p class="seccionesTienda títuloNovedades">Novedades de junio</p>
             <section class="novedadesMes">
@@ -160,9 +160,5 @@
             </a>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
