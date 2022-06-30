@@ -1,0 +1,166 @@
+.navBar{
+    grid-area: navBar;
+    display: grid;
+    grid-template-areas:
+    "logo logo"
+    "login ayuda"
+    "barraBúsqueda barraBúsqueda";
+    justify-items: center;
+}
+.inicioLogo{
+    grid-area: logo;
+    margin: 30px 10px 10px;
+}
+.botónLogin{
+    grid-area: login;
+    padding: 10px;
+    margin: 30px;
+    border: $border9;
+    border-radius: 23px;
+    box-shadow: $shadow2;
+    background-color: $bg7;
+    &:hover{
+        background-color: $bg8;
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+.iconoAyuda{
+    grid-area: ayuda;
+    margin: 30px;
+    &:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+.barraBúsqueda{
+    grid-area: barraBúsqueda;
+    padding: 10px;
+    margin: 7px;
+    .casillaBúsqueda{
+        width: 210px;
+        height: 29px;
+        border-radius: 7px;
+    }
+    .botónBúsqueda{
+        padding: 5px;
+        height: 29px;
+    }
+}
+.navMisLecturas{
+    grid-area: botónLecturas;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: $border10;
+    border-radius: 23px;
+    box-shadow: $shadow2;
+    background-color: $bg9;
+    &:hover{
+        background-color: $bg10;
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+.navRecomendaciones{
+    grid-area: botónRecomendaciones;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: $border10;
+    border-radius: 23px;
+    box-shadow: $shadow2;
+    background-color: $bg9;
+    &:hover{
+        background-color: $bg10;
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+.navTienda{
+    grid-area: botónTienda;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: $border10;
+    border-radius: 23px;
+    box-shadow: $shadow2;
+    background-color: $bg9;
+    &:hover{
+        background-color: $bg10;
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+.navComunidad{
+    grid-area: botónComunidad;
+    padding: 10px;
+    margin: 7px;
+    text-align: center;
+    border: $border10;
+    border-radius: 23px;
+    box-shadow: $shadow2;
+    background-color: $bg9;
+    &:hover{
+        background-color: $bg10;
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+@media (min-width:640px){
+    nav{
+        ul{
+            grid-area: botonesNav;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: larger;
+        }
+    }
+    .navBar{
+        grid-template-areas:
+        "login logo ayuda"
+        "barraBúsqueda barraBúsqueda barraBúsqueda";
+        justify-items: center;
+    }
+    .inicioLogo{
+        margin: 10px;
+    }
+    .botónLogin{
+        margin: 41px;
+        text-align: center;
+    }
+    .iconoAyuda{
+        margin: 41px;
+        display: flex;
+        justify-content: center;
+    }
+    .casillaBúsqueda{
+        width: 350px;
+    }
+}
+@media (min-width:1000px){
+    .navBar{
+        grid-template-areas:
+        "logo barraBúsqueda login ayuda";
+        grid-template-columns: 25% 45% 15% 15%;
+        align-items: center;
+    }
+    .inicioLogo{
+        margin-right: 105px;
+    }
+    .casillaBúsqueda{
+        width: 300px;
+        height: 35px;
+    }
+    .botónBúsqueda{
+        padding: 5px;
+        height: 35px;
+    }
+}

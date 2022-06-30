@@ -1,0 +1,168 @@
+.galeríaTienda{
+    display: grid;
+    grid-template-areas:
+    "títuloNovedades"
+    "novedades"
+    "títuloBestSeller"
+    "bestSeller"
+    "títuloAudiolibros"
+    "audiolibros"
+    "títuloEBooks"
+    "ebooks"
+    "títuloMercancía"
+    "mercancía"
+    "títuloExample"
+    "example"
+    ;
+}
+.seccionesTienda{
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: $font-color2;
+}
+.seccionesTienda.títuloNovedades{
+    grid-area: títuloNovedades;
+}
+.seccionesTienda.títuloBestSeller{
+    grid-area: títuloBestSeller;
+}
+.seccionesTienda.títuloAudiolibros{
+    grid-area: títuloAudiolibros;
+}
+.seccionesTienda.títuloEBooks{
+    grid-area: títuloEBooks;
+}
+.seccionesTienda.títuloMercancía{
+    grid-area: títuloMercancía;
+}
+.seccionesTienda.títuloExample{
+    grid-area: títuloExample;
+}
+.portadas.grupoC{
+    border: $border5;
+}
+.novedadesMes{
+    grid-area: novedades;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border: $border8;
+    box-shadow: $shadow4;
+}    
+.bestSeller{
+    grid-area: bestSeller;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border: $border8;
+    box-shadow: $shadow4;
+}
+.audiolibros{
+    grid-area: audiolibros;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border: $border8;
+    box-shadow: $shadow4;
+}
+.eBooks{
+    grid-area: ebooks;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border:$border8;
+    box-shadow: $shadow4;
+}
+.mercancía{
+    grid-area: mercancía;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border: $border8;
+    box-shadow: $shadow4;
+}
+.imagenesMerch{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    width: 57%;
+    height: 82%;
+    background-color: $bg2;
+    border: $border6;
+}
+.exampleTienda{
+    grid-area: example;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 50px;
+    background-color: $bg6;
+    border-radius: 23px;
+    border: $border8;
+    box-shadow: $shadow4;
+}
+.exampleImg{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    width: 57%;
+    height: 82%;
+    background-color: $bg2;
+    border: $border7;
+}
+@media (min-width:640px){
+    .imagenesMerch:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    .exampleImg:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+@media (min-width:1000px){
+    .novedadesMes{
+        display: flex;
+        flex-direction: row;
+    }
+    .bestSeller{
+        display: flex;
+        flex-direction: row;
+    }
+    .audiolibros{
+        display: flex;
+        flex-direction: row;
+    }
+    .eBooks{
+        display: flex;
+        flex-direction: row;
+    }
+    .mercancía{
+        display: flex;
+        flex-direction: row;
+    }
+    .exampleTienda{
+        display: flex;
+        flex-direction: row;
+    }
+}

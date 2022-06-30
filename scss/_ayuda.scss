@@ -1,0 +1,51 @@
+.ayudaGrid{
+    display: grid;
+    grid-template-areas:
+    "títuloAyuda"
+    "guía"
+    "formulario"
+    "exampleAyuda"
+    "preguntasAyuda";
+}
+.títuloAyuda{
+    grid-area: títuloAyuda;
+}
+.guía{
+    grid-area: guía;
+    padding: 21px;
+    margin: 30px;
+    border: $border4;
+    background-color: $bg5;
+    box-shadow: $shadow3;
+}
+.formulario{
+    grid-area: formulario;
+    margin: 30px;
+    border: $border4;
+    background-color: $bg5;
+    box-shadow: $shadow3;
+    .formularioOpción{
+        margin: 17px;
+    }
+}
+.exampleAyuda{
+    grid-area: exampleAyuda;
+    margin: 20px;
+    border: $border4;
+    background-color: $bg5;
+    box-shadow: $shadow3;
+}
+.preguntasAyuda{
+    grid-area: preguntasAyuda;
+    .correoContacto{
+        color: $font-color8;
+    }
+}
+@media (min-width:1000px){
+    .ayudaGrid{
+        grid-template-areas:
+        "títuloAyuda títuloAyuda títuloAyuda"
+        "guía formulario exampleAyuda"
+        "guía preguntasAyuda exampleAyuda";
+    }
+}

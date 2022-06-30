@@ -1,0 +1,35 @@
+.formulariosLecturas{
+    margin: 30px;
+    padding: 10px;
+    border: $border2;
+    background-color: $bg3;
+    box-shadow: $shadow1;
+    .títuloLecturas{
+        text-align: center;
+    }
+}
+.casillasLecturas{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.estrellas{
+    margin-bottom: 10px;
+}
+@media (min-width:640px){
+    .formulariosGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+}
+@media (min-width:1000px){
+    .formulariosLecturas{
+        width: 325px;
+    }
+    .casillasLecturas{
+        width: 300px;
+    }
+}

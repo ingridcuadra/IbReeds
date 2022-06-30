@@ -1,0 +1,678 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+body {
+  background-color: #ffe4e8;
+  color: #070707;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+header {
+  background-color: #d5e6eb;
+  padding: 27px; }
+
+nav ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #0e5b5b; }
+
+footer {
+  grid-area: footer;
+  background-color: #d5e6eb;
+  padding: 27px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.iconoMotor {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f3ddbf;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px double #cc6f7e; }
+
+p {
+  margin: 10px;
+  font-size: 20px; }
+
+.avisos {
+  padding: 5px;
+  margin: 80px;
+  border: 2px dashed pink;
+  text-align: center; }
+
+h3 {
+  padding: 20px 10px 20px 10px;
+  margin: 27px;
+  text-align: center;
+  font-size: 27px;
+  color: #000061; }
+
+h4 {
+  margin: 12px;
+  font-size: 23px;
+  color: #000057; }
+
+h5 {
+  margin: 7px;
+  font-size: 20px;
+  color: #00002f; }
+
+.navBar {
+  grid-area: navBar;
+  display: grid;
+  grid-template-areas: "logo logo" "login ayuda" "barraBúsqueda barraBúsqueda";
+  justify-items: center; }
+
+.inicioLogo {
+  grid-area: logo;
+  margin: 30px 10px 10px; }
+
+.botónLogin {
+  grid-area: login;
+  padding: 10px;
+  margin: 30px;
+  border: 2px double #86c5a2;
+  border-radius: 23px;
+  box-shadow: 5px 5px #6ca290;
+  background-color: #96e7cc; }
+  .botónLogin:hover {
+    background-color: #c0dfd4;
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+.iconoAyuda {
+  grid-area: ayuda;
+  margin: 30px; }
+  .iconoAyuda:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+.barraBúsqueda {
+  grid-area: barraBúsqueda;
+  padding: 10px;
+  margin: 7px; }
+  .barraBúsqueda .casillaBúsqueda {
+    width: 210px;
+    height: 29px;
+    border-radius: 7px; }
+  .barraBúsqueda .botónBúsqueda {
+    padding: 5px;
+    height: 29px; }
+
+.navMisLecturas {
+  grid-area: botónLecturas;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+  border: 2px double #ff7e93;
+  border-radius: 23px;
+  box-shadow: 5px 5px #6ca290;
+  background-color: pink; }
+  .navMisLecturas:hover {
+    background-color: #ffd1d9;
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+.navRecomendaciones {
+  grid-area: botónRecomendaciones;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+  border: 2px double #ff7e93;
+  border-radius: 23px;
+  box-shadow: 5px 5px #6ca290;
+  background-color: pink; }
+  .navRecomendaciones:hover {
+    background-color: #ffd1d9;
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+.navTienda {
+  grid-area: botónTienda;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+  border: 2px double #ff7e93;
+  border-radius: 23px;
+  box-shadow: 5px 5px #6ca290;
+  background-color: pink; }
+  .navTienda:hover {
+    background-color: #ffd1d9;
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+.navComunidad {
+  grid-area: botónComunidad;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+  border: 2px double #ff7e93;
+  border-radius: 23px;
+  box-shadow: 5px 5px #6ca290;
+  background-color: pink; }
+  .navComunidad:hover {
+    background-color: #ffd1d9;
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+
+@media (min-width: 640px) {
+  nav ul {
+    grid-area: botonesNav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger; }
+  .navBar {
+    grid-template-areas: "login logo ayuda" "barraBúsqueda barraBúsqueda barraBúsqueda";
+    justify-items: center; }
+  .inicioLogo {
+    margin: 10px; }
+  .botónLogin {
+    margin: 41px;
+    text-align: center; }
+  .iconoAyuda {
+    margin: 41px;
+    display: flex;
+    justify-content: center; }
+  .casillaBúsqueda {
+    width: 350px; } }
+
+@media (min-width: 1000px) {
+  .navBar {
+    grid-template-areas: "logo barraBúsqueda login ayuda";
+    grid-template-columns: 25% 45% 15% 15%;
+    align-items: center; }
+  .inicioLogo {
+    margin-right: 105px; }
+  .casillaBúsqueda {
+    width: 300px;
+    height: 35px; }
+  .botónBúsqueda {
+    padding: 5px;
+    height: 35px; } }
+
+#grillaInicio {
+  display: grid;
+  grid-template-areas: "navBar" "botónLecturas" "botónRecomendaciones" "botónTienda" "botónComunidad" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
+
+.eslogan {
+  grid-area: eslogan; }
+  .eslogan h1 {
+    padding: 20px 10px 20px 10px;
+    margin: 37px;
+    text-align: center;
+    font-size: 33px;
+    color: #09093b; }
+
+.librosDelMes {
+  grid-area: librosDelMes; }
+  .librosDelMes h2 {
+    margin: 20px;
+    font-size: 30px;
+    color: #00006b; }
+
+.librosMesGrid {
+  grid-area: librosMesGrid; }
+  .librosMesGrid .títulosInicio {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #000054; }
+
+.portadas {
+  margin: 12px;
+  padding: 10px;
+  text-align: center;
+  font-size: 23px;
+  overflow: hidden;
+  width: 57%;
+  height: 82%;
+  background-color: #f3f3f3; }
+  .portadas .títulos {
+    color: #000043; }
+
+.portadas.grupoA {
+  border: 5px double #4fbb97; }
+
+.portadas.grupoB {
+  border: 5px double palevioletred; }
+
+.galeríaLibros {
+  display: grid;
+  justify-items: center; }
+
+.autoresArgentinos {
+  margin: 50px;
+  background-color: #fed1d9;
+  border-radius: 23px;
+  border: 5px double palevioletred;
+  box-shadow: 5px 5px #bd718a; }
+
+.ficciónPersonal {
+  margin: 50px;
+  background-color: #bff7e4;
+  border-radius: 23px;
+  border: 5px double #57a68c;
+  box-shadow: 5px 5px #6ca290; }
+
+.distopías {
+  margin: 50px;
+  background-color: #fed1d9;
+  border-radius: 23px;
+  border: 5px double palevioletred;
+  box-shadow: 5px 5px #bd718a; }
+
+.infantiles {
+  margin: 50px;
+  background-color: #bff7e4;
+  border-radius: 23px;
+  border: 5px double #57a68c;
+  box-shadow: 5px 5px #6ca290; }
+
+.fantasía {
+  margin: 50px;
+  background-color: #fed1d9;
+  border-radius: 23px;
+  border: 5px double palevioletred;
+  box-shadow: 5px 5px #bd718a; }
+
+.contextoHistórico {
+  margin: 50px;
+  background-color: #bff7e4;
+  border-radius: 23px;
+  border: 5px double #57a68c;
+  box-shadow: 5px 5px #6ca290; }
+
+@media (min-width: 640px) {
+  #grillaInicio {
+    display: grid;
+    grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
+  .portadas:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; } }
+
+@media (min-width: 1000px) {
+  .galeríaLibros {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+.ayudaGrid {
+  display: grid;
+  grid-template-areas: "títuloAyuda" "guía" "formulario" "exampleAyuda" "preguntasAyuda"; }
+
+.títuloAyuda {
+  grid-area: títuloAyuda; }
+
+.guía {
+  grid-area: guía;
+  padding: 21px;
+  margin: 30px;
+  border: 5px double #ae70d8;
+  background-color: #eddcfc;
+  box-shadow: 5px 5px #88749a; }
+
+.formulario {
+  grid-area: formulario;
+  margin: 30px;
+  border: 5px double #ae70d8;
+  background-color: #eddcfc;
+  box-shadow: 5px 5px #88749a; }
+  .formulario .formularioOpción {
+    margin: 17px; }
+
+.exampleAyuda {
+  grid-area: exampleAyuda;
+  margin: 20px;
+  border: 5px double #ae70d8;
+  background-color: #eddcfc;
+  box-shadow: 5px 5px #88749a; }
+
+.preguntasAyuda {
+  grid-area: preguntasAyuda; }
+  .preguntasAyuda .correoContacto {
+    color: #0e5b5b; }
+
+@media (min-width: 1000px) {
+  .ayudaGrid {
+    grid-template-areas: "títuloAyuda títuloAyuda títuloAyuda" "guía formulario exampleAyuda" "guía preguntasAyuda exampleAyuda"; } }
+
+.objetivoComunidad {
+  margin: 37px;
+  text-align: center;
+  font-size: 22px;
+  color: #000043; }
+
+.parrafoCentrado {
+  margin: 10px;
+  text-align: center; }
+
+.botonesComunidad {
+  margin: 53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .botonesComunidad .botónComunidad {
+    padding: 17px;
+    text-align: center; }
+
+@media (min-width: 640px) {
+  .botónComunidad:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.5s; } }
+
+.formularioLogin {
+  margin: 30px;
+  border: 5px double palevioletred;
+  background-color: #fed1d9;
+  box-shadow: 5px 5px #bd718a;
+  text-align: center; }
+  .formularioLogin .casillasLogin {
+    margin: 12px; }
+
+@media (min-width: 640px) {
+  .formularioLogin {
+    margin: 30px 15%; } }
+
+@media (min-width: 1000px) {
+  .formularioLogin {
+    margin: 30px 31%; } }
+
+.formulariosLecturas {
+  margin: 30px;
+  padding: 10px;
+  border: 5px double palevioletred;
+  background-color: #fed1d9;
+  box-shadow: 5px 5px #bd718a; }
+  .formulariosLecturas .títuloLecturas {
+    text-align: center; }
+
+.casillasLecturas {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.estrellas {
+  margin-bottom: 10px; }
+
+@media (min-width: 640px) {
+  .formulariosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center; } }
+
+@media (min-width: 1000px) {
+  .formulariosLecturas {
+    width: 325px; }
+  .casillasLecturas {
+    width: 300px; } }
+
+.motorNavBar {
+  display: flex;
+  justify-content: center; }
+
+.proyectoIbreeds {
+  margin: 30px;
+  background-color: #bbeaef;
+  border-radius: 23px;
+  border: 5px double #57a2a6;
+  box-shadow: 5px 5px #6ca290;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "título" "imagen" "parrafo1" "parrafo2" "parrafo3" "parrafo4"; }
+
+.títuloProyecto {
+  grid-area: título; }
+
+.imagenProyecto {
+  grid-area: imagen; }
+
+.parrafoProyecto1 {
+  grid-area: parrafo1; }
+
+.parrafoProyecto2 {
+  grid-area: parrafo2; }
+
+.parrafoProyecto3 {
+  grid-area: parrafo3; }
+
+.parrafoProyecto4 {
+  grid-area: parrafo4; }
+
+.formularioMotor {
+  margin: 30px;
+  padding: 10px;
+  background-color: #bbeaef;
+  border-radius: 23px;
+  border: 5px double #57a2a6;
+  box-shadow: 5px 5px #6ca290; }
+  .formularioMotor .pFormMotor {
+    text-align: center; }
+
+@media (min-width: 640px) {
+  .proyectoIbreeds {
+    margin: 60px; }
+  .formularioMotor {
+    margin: 60px; } }
+
+@media (min-width: 1000px) {
+  .motorNavBar {
+    margin: 10px; } }
+
+@media (min-width: 1000px) {
+  .proyectoIbreeds {
+    margin: 70px;
+    grid-template-areas: "título título título" "parrafo1 parrafo1 imagen" "parrafo2 parrafo3 parrafo4"; }
+  .fotmularioMotor {
+    margin: 70px; } }
+
+.videoAviso {
+  margin: 75px 40px 40px 40px;
+  text-align: left;
+  font-size: 20px;
+  color: #000043; }
+
+.galeríaVideos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center; }
+  .galeríaVideos .videos {
+    margin: 20px;
+    padding: 12px;
+    background-color: #bff7e4;
+    border-radius: 23px;
+    border: 5px double #57a68c;
+    box-shadow: 5px 5px #6ca290;
+    display: flex;
+    justify-content: center; }
+
+@media (min-width: 640px) {
+  .videos {
+    width: 380px;
+    height: 195px; }
+  iframe {
+    width: 360px;
+    height: 175px; } }
+
+@media (min-width: 1000px) {
+  .galeríaVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .videos {
+    width: 420px;
+    height: 235px; }
+  iframe {
+    width: 400px;
+    height: 215px; } }
+
+.galeríaTienda {
+  display: grid;
+  grid-template-areas: "títuloNovedades" "novedades" "títuloBestSeller" "bestSeller" "títuloAudiolibros" "audiolibros" "títuloEBooks" "ebooks" "títuloMercancía" "mercancía" "títuloExample" "example"; }
+
+.seccionesTienda {
+  margin: 5px;
+  font-size: 30px;
+  text-align: center;
+  color: #000054; }
+
+.seccionesTienda.títuloNovedades {
+  grid-area: títuloNovedades; }
+
+.seccionesTienda.títuloBestSeller {
+  grid-area: títuloBestSeller; }
+
+.seccionesTienda.títuloAudiolibros {
+  grid-area: títuloAudiolibros; }
+
+.seccionesTienda.títuloEBooks {
+  grid-area: títuloEBooks; }
+
+.seccionesTienda.títuloMercancía {
+  grid-area: títuloMercancía; }
+
+.seccionesTienda.títuloExample {
+  grid-area: títuloExample; }
+
+.portadas.grupoC {
+  border: 5px double #aeaeae; }
+
+.novedadesMes {
+  grid-area: novedades;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.bestSeller {
+  grid-area: bestSeller;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.audiolibros {
+  grid-area: audiolibros;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.eBooks {
+  grid-area: ebooks;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.mercancía {
+  grid-area: mercancía;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.imagenesMerch {
+  margin: 12px;
+  padding: 10px;
+  text-align: center;
+  font-size: 23px;
+  width: 57%;
+  height: 82%;
+  background-color: #f3f3f3;
+  border: 5px double #4b9a7f; }
+
+.exampleTienda {
+  grid-area: example;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 50px;
+  background-color: #ead1fe;
+  border-radius: 23px;
+  border: 5px double #c9a0ec;
+  box-shadow: 5px 5px #957baa; }
+
+.exampleImg {
+  margin: 12px;
+  padding: 10px;
+  text-align: center;
+  font-size: 23px;
+  width: 57%;
+  height: 82%;
+  background-color: #f3f3f3;
+  border: 5px double #4b609a; }
+
+@media (min-width: 640px) {
+  .imagenesMerch:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+  .exampleImg:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; } }
+
+@media (min-width: 1000px) {
+  .novedadesMes {
+    display: flex;
+    flex-direction: row; }
+  .bestSeller {
+    display: flex;
+    flex-direction: row; }
+  .audiolibros {
+    display: flex;
+    flex-direction: row; }
+  .eBooks {
+    display: flex;
+    flex-direction: row; }
+  .mercancía {
+    display: flex;
+    flex-direction: row; }
+  .exampleTienda {
+    display: flex;
+    flex-direction: row; } }

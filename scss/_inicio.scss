@@ -1,0 +1,127 @@
+#grillaInicio{
+    display: grid;
+    grid-template-areas:
+    "navBar"
+    "botónLecturas"
+    "botónRecomendaciones"
+    "botónTienda"
+    "botónComunidad"
+    "eslogan"
+    "librosDelMes"
+    "librosMesGrid"
+    "footer";
+}
+.eslogan{
+    grid-area: eslogan;
+    h1{
+        padding: 20px 10px 20px 10px;
+        margin: 37px;
+        text-align: center;
+        font-size: 33px;
+        color: $font-color3;
+    }
+}
+.librosDelMes{
+    grid-area: librosDelMes;
+    h2{
+        margin: 20px;
+        font-size: 30px;
+        color: $font-color4;
+    }
+}
+.librosMesGrid{
+    grid-area:librosMesGrid;
+    .títulosInicio{
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        color: $font-color2;
+    }
+}
+.portadas{
+    margin: 12px;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+    overflow: hidden;
+    width: 57%;
+    height: 82%;
+    background-color: $bg2;
+    .títulos{
+        color: $font-color1;
+    }
+}
+.portadas.grupoA{
+    border: $border1;
+}
+.portadas.grupoB{
+    border: $border2;
+}
+.galeríaLibros{
+    display: grid;
+    justify-items: center;
+}
+.autoresArgentinos{
+    margin: 50px;
+    background-color: $bg3;
+    border-radius: 23px;
+    border: $border2;
+    box-shadow: $shadow1;
+}
+.ficciónPersonal{
+    margin: 50px;
+    background-color: $bg4;
+    border-radius: 23px;
+    border: $border3;
+    box-shadow: $shadow2;
+}
+.distopías{
+    margin: 50px;
+    background-color: $bg3;
+    border-radius: 23px;
+    border: $border2;
+    box-shadow: $shadow1;
+}
+.infantiles{
+    margin: 50px;
+    background-color: $bg4;
+    border-radius: 23px;
+    border: $border3;
+    box-shadow: $shadow2;
+}
+.fantasía{
+    margin: 50px;
+    background-color: $bg3;
+    border-radius: 23px;
+    border: $border2;
+    box-shadow: $shadow1;
+}
+.contextoHistórico{
+    margin: 50px;
+    background-color: $bg4;
+    border-radius: 23px;
+    border: $border3;
+    box-shadow: $shadow2;
+}
+@media (min-width:640px){
+    #grillaInicio{
+        display: grid;
+        grid-template-areas:
+        "navBar"
+        "botonesNav"
+        "eslogan"
+        "librosDelMes"
+        "librosMesGrid"
+        "footer";
+    }
+    .portadas:hover{
+        transform: scale(1.05);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+@media (min-width:1000px){
+    .galeríaLibros{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

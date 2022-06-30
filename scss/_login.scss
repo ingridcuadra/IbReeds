@@ -1,0 +1,20 @@
+.formularioLogin{
+    margin: 30px;
+    border: $border2;
+    background-color: $bg3;
+    box-shadow: $shadow1;
+    text-align: center;
+    .casillasLogin{
+        margin: 12px;
+    }
+}
+@media (min-width:640px){
+    .formularioLogin{
+        margin: 30px 15%;
+    }
+}
+@media (min-width:1000px){
+    .formularioLogin{
+        margin: 30px 31%;
+    }
+}

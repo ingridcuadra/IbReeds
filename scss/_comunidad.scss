@@ -1,0 +1,28 @@
+.objetivoComunidad{
+    margin: 37px;
+    text-align: center;
+    font-size: 22px;
+    color: $font-color1;
+}
+.parrafoCentrado{
+    margin: 10px;
+    text-align: center;
+}
+.botonesComunidad{
+    margin: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    .botónComunidad{
+        padding: 17px;
+        text-align: center;
+    }
+}
+@media (min-width:640px){
+    .botónComunidad:hover{
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}

@@ -1,0 +1,75 @@
+.motorNavBar{
+    display: flex;
+    justify-content: center;
+}
+.proyectoIbreeds{
+    margin: 30px;
+    background-color: $bg11;
+    border-radius: 23px;
+    border: $border11;
+    box-shadow: $shadow2;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "título"
+    "imagen"
+    "parrafo1"
+    "parrafo2"
+    "parrafo3"
+    "parrafo4";
+}
+.títuloProyecto{
+    grid-area: título;
+}
+.imagenProyecto{
+    grid-area: imagen;
+}
+.parrafoProyecto1{
+    grid-area: parrafo1;
+}
+.parrafoProyecto2{
+    grid-area: parrafo2;
+}
+.parrafoProyecto3{
+    grid-area: parrafo3;
+}
+.parrafoProyecto4{
+    grid-area: parrafo4;
+}
+.formularioMotor{
+    margin: 30px;
+    padding: 10px;
+    background-color: $bg11;
+    border-radius: 23px;
+    border: $border11;
+    box-shadow: $shadow2;
+    .pFormMotor{
+        text-align: center;
+    }    
+}
+@media (min-width:640px){
+    .proyectoIbreeds{
+        margin: 60px;
+    }
+    .formularioMotor{
+        margin: 60px;
+    } 
+}
+@media (min-width:1000px){
+    .motorNavBar{
+        margin: 10px;
+    }
+}
+@media (min-width:1000px){
+    .proyectoIbreeds{
+        margin: 70px;
+        grid-template-areas:
+        "título título título"
+        "parrafo1 parrafo1 imagen"
+        "parrafo2 parrafo3 parrafo4";
+    }
+    .fotmularioMotor{
+        margin: 70px;
+    }
+}
