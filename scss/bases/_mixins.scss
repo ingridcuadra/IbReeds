@@ -1,3 +1,10 @@
-@mixin botón ($color){
+@mixin boton ($color){
     background-color: $color;
+    border: $border10;
+    border-radius: 23px;
+}
+@mixin btn{
+    background-color: map-get($background-color, "bg5");
+    border: $border14;
+    border-radius: 23px;
 }

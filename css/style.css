@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.btn2, .btnAyuda {
+  background-color: #eddcfc;
+  border: 2px double #88749a;
+  border-radius: 23px; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -70,6 +75,14 @@ h5 {
   font-size: 20px;
   color: #00002f; }
 
+.btn {
+  background-color: #eddcfc;
+  border: 2px double #88749a;
+  border-radius: 23px; }
+
+.btn2, .btnAyuda {
+  padding: 5px; }
+
 .navBar {
   grid-area: navBar;
   display: grid;
@@ -110,9 +123,13 @@ h5 {
     width: 210px;
     height: 29px;
     border-radius: 7px; }
-  .barraBúsqueda .botónBúsqueda {
-    padding: 5px;
-    height: 29px; }
+
+.botónBúsqueda {
+  padding: 5px;
+  height: 29px;
+  background-color: #fed1d9;
+  border: 2px double #ff7e93;
+  border-radius: 23px; }
 
 .navMisLecturas {
   grid-area: botónLecturas;
@@ -338,6 +355,11 @@ h5 {
   box-shadow: 5px 5px #88749a; }
   .formulario .formularioOpción {
     margin: 17px; }
+
+.btnAyuda {
+  padding: 5px;
+  display: flex;
+  justify-content: start; }
 
 .exampleAyuda {
   grid-area: exampleAyuda;

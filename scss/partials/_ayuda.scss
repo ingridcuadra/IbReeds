@@ -15,24 +15,30 @@
     padding: 21px;
     margin: 30px;
     border: $border4;
-    background-color: $bg5;
+    background-color: map-get($background-color, "bg5");
     box-shadow: $shadow3;
 }
 .formulario{
     grid-area: formulario;
     margin: 30px;
     border: $border4;
-    background-color: $bg5;
+    background-color: map-get($background-color, "bg5");
     box-shadow: $shadow3;
     .formularioOpción{
         margin: 17px;
     }
 }
+.btnAyuda{
+    @extend .btn2;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+}
 .exampleAyuda{
     grid-area: exampleAyuda;
     margin: 20px;
     border: $border4;
-    background-color: $bg5;
+    background-color: map-get($background-color, "bg5");
     box-shadow: $shadow3;
 }
 .preguntasAyuda{

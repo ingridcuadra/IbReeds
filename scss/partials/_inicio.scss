@@ -46,7 +46,7 @@
     overflow: hidden;
     width: 57%;
     height: 82%;
-    background-color: $bg2;
+    background-color: map-get($background-color, "bg2");
     .títulos{
         color: $font-color1;
     }
@@ -63,42 +63,42 @@
 }
 .autoresArgentinos{
     margin: 50px;
-    background-color: $bg3;
+    background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .ficciónPersonal{
     margin: 50px;
-    background-color: $bg4;
+    background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
     box-shadow: $shadow2;
 }
 .distopías{
     margin: 50px;
-    background-color: $bg3;
+    background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .infantiles{
     margin: 50px;
-    background-color: $bg4;
+    background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
     box-shadow: $shadow2;
 }
 .fantasía{
     margin: 50px;
-    background-color: $bg3;
+    background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .contextoHistórico{
     margin: 50px;
-    background-color: $bg4;
+    background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
     box-shadow: $shadow2;

@@ -12,7 +12,7 @@
     .videos{
         margin: 20px;
         padding: 12px;
-        background-color: $bg4;
+        background-color: map-get($background-color, "bg4");
         border-radius: 23px;
         border: $border3;
         box-shadow: $shadow2;

@@ -4,7 +4,7 @@
 }
 .proyectoIbreeds{
     margin: 30px;
-    background-color: $bg11;
+    background-color: map-get($background-color, "bg11");
     border-radius: 23px;
     border: $border11;
     box-shadow: $shadow2;
@@ -40,7 +40,7 @@
 .formularioMotor{
     margin: 30px;
     padding: 10px;
-    background-color: $bg11;
+    background-color: map-get($background-color, "bg11");
     border-radius: 23px;
     border: $border11;
     box-shadow: $shadow2;

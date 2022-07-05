@@ -1,7 +1,7 @@
 .formularioLogin{
     margin: 30px;
     border: $border2;
-    background-color: $bg3;
+    background-color: map-get($background-color, "bg3");
     box-shadow: $shadow1;
     text-align: center;
     .casillasLogin{

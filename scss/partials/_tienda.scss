@@ -48,7 +48,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
@@ -59,7 +59,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
@@ -70,7 +70,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
@@ -81,7 +81,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border:$border8;
     box-shadow: $shadow4;
@@ -92,7 +92,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
@@ -104,7 +104,7 @@
     font-size: 23px;
     width: 57%;
     height: 82%;
-    background-color: $bg2;
+    background-color: map-get($background-color, "bg2");
     border: $border6;
 }
 .exampleTienda{
@@ -113,7 +113,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     margin: 50px;
-    background-color: $bg6;
+    background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
@@ -125,7 +125,7 @@
     font-size: 23px;
     width: 57%;
     height: 82%;
-    background-color: $bg2;
+    background-color: map-get($background-color, "bg2");
     border: $border7;
 }
 @media (min-width:640px){

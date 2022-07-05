@@ -1,6 +1,19 @@
-$bg0: rgb(255, 228, 232);
+$background-color: (
+    "bg0": rgb(255, 228, 232),
+    "bg1": rgb(213, 230, 235),
+    "bg2": rgb(243, 243, 243),
+    "bg3": rgb(254, 209, 217),
+    "bg4": rgb(191, 247, 228),
+    "bg5": rgb(237, 220, 252),
+    "bg6": rgb(234, 209, 254),
+    "bg7": rgb(150, 231, 204),
+    "bg8": rgb(192, 223, 212),
+    "bg9": rgb(255, 192, 203),
+    "bg10": rgb(255, 209, 217),
+    "bg11": rgb(187, 234, 239),
+    "bg12": rgb(243, 221, 191),
+);
 $font-color0: rgb(7, 7, 7);
-$bg1: rgb(213, 230, 235);
 $padding1: 27px;
 $font-color1: rgb(0, 0, 67);
 $font-color2: rgb(0, 0, 84);
@@ -11,31 +24,21 @@ $font-color6: rgb(0, 0, 87);
 $font-color7: rgb(0, 0, 47);
 $font-color8: rgb(14, 91, 91);
 $font-size: 20px;
-$bg2: rgb(243, 243, 243);
 $border1: 5px double rgb(79, 187, 151);
-$bg3: rgb(254, 209, 217);
 $border2: 5px double palevioletred;
 $shadow1: 5px 5px rgb(189, 113, 138);
-$bg4: rgb(191, 247, 228);
 $border3: 5px double rgb(87, 166, 140);
 $shadow2: 5px 5px rgb(108, 162, 144);
 $border4: 5px double rgb(174, 112, 216);
-$bg5: rgb(237, 220, 252);
 $shadow3: 5px 5px rgb(136, 116, 154);
 $border5: 5px double rgb(174, 174, 174);
 $border6: 5px double rgb(75, 154, 127);
 $border7: 5px double rgb(75, 96, 154);
-$bg6: rgb(234, 209, 254);
 $border8: 5px double rgb(201, 160, 236);
 $shadow4: 5px 5px rgb(149, 123, 170);
 $border9: 2px double rgb(134, 197, 162);
-$bg7: rgb(150, 231, 204);
-$bg8: rgb(192, 223, 212);
 $border10: 2px double rgb(255, 126, 147);
-$bg9: rgb(255, 192, 203);
-$bg10: rgb(255, 209, 217);
-$bg11: rgb(187, 234, 239);
 $border11: 5px double rgb(87, 162, 166);
 $border12: 2px dashed pink;
-$bg12: rgb(243, 221, 191);
 $border13: 2px double rgb(204, 111, 126);
+$border14: 2px double rgb(136, 116, 154);

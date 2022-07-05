@@ -18,9 +18,9 @@
     border: $border9;
     border-radius: 23px;
     box-shadow: $shadow2;
-    background-color: $bg7;
+    background-color: map-get($background-color, "bg7");
     &:hover{
-        background-color: $bg8;
+        background-color: map-get($background-color, "bg8");
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;
@@ -48,7 +48,7 @@
 .botónBúsqueda{
     padding: 5px;
     height: 29px;
-    @include botón (blue);
+    @include boton (rgb(254, 209, 217));
 }
 .navMisLecturas{
     grid-area: botónLecturas;
@@ -58,9 +58,9 @@
     border: $border10;
     border-radius: 23px;
     box-shadow: $shadow2;
-    background-color: $bg9;
+    background-color: map-get($background-color, "bg9");
     &:hover{
-        background-color: $bg10;
+        background-color: map-get($background-color, "bg10");
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;
@@ -74,9 +74,9 @@
     border: $border10;
     border-radius: 23px;
     box-shadow: $shadow2;
-    background-color: $bg9;
+    background-color: map-get($background-color, "bg9");
     &:hover{
-        background-color: $bg10;
+        background-color: map-get($background-color, "bg10");
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;
@@ -90,9 +90,9 @@
     border: $border10;
     border-radius: 23px;
     box-shadow: $shadow2;
-    background-color: $bg9;
+    background-color: map-get($background-color, "bg9");
     &:hover{
-        background-color: $bg10;
+        background-color: map-get($background-color, "bg10");
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;
@@ -106,9 +106,9 @@
     border: $border10;
     border-radius: 23px;
     box-shadow: $shadow2;
-    background-color: $bg9;
+    background-color: map-get($background-color, "bg9");
     &:hover{
-        background-color: $bg10;
+        background-color: map-get($background-color, "bg10");
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;

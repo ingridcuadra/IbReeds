@@ -2,7 +2,7 @@
     margin: 30px;
     padding: 10px;
     border: $border2;
-    background-color: $bg3;
+    background-color: map-get($background-color, "bg3");
     box-shadow: $shadow1;
     .títuloLecturas{
         text-align: center;
