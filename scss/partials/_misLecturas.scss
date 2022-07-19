@@ -17,19 +17,3 @@
 .estrellas{
     margin-bottom: 10px;
 }
-@media (min-width:640px){
-    .formulariosGrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-    }
-}
-@media (min-width:1000px){
-    .formulariosLecturas{
-        width: 325px;
-    }
-    .casillasLecturas{
-        width: 300px;
-    }
-}

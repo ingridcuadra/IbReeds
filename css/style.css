@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .btn2, .btnAyuda {
   background-color: #eddcfc;
-  border: 2px double #88749a;
-  border-radius: 23px; }
+  border: 2px double #8a90b5;
+  border-radius: 23px;
+  box-shadow: 5px 5px #73778d; }
 
 * {
   padding: 0;
@@ -76,9 +77,10 @@ h5 {
   color: #00002f; }
 
 .btn {
-  background-color: #eddcfc;
-  border: 2px double #88749a;
-  border-radius: 23px; }
+  background-color: #bbeaef;
+  border: 2px double #8a90b5;
+  border-radius: 23px;
+  box-shadow: 5px 5px #73778d; }
 
 .btn2, .btnAyuda {
   padding: 5px; }
@@ -120,7 +122,7 @@ h5 {
   padding: 10px;
   margin: 7px; }
   .barraBúsqueda .casillaBúsqueda {
-    width: 210px;
+    width: 169px;
     height: 29px;
     border-radius: 7px; }
 
@@ -129,7 +131,8 @@ h5 {
   height: 29px;
   background-color: #fed1d9;
   border: 2px double #ff7e93;
-  border-radius: 23px; }
+  border-radius: 23px;
+  box-shadow: 5px 5px #bd718a; }
 
 .navMisLecturas {
   grid-area: botónLecturas;
@@ -190,42 +193,6 @@ h5 {
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s; }
-
-@media (min-width: 640px) {
-  nav ul {
-    grid-area: botonesNav;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: larger; }
-  .navBar {
-    grid-template-areas: "login logo ayuda" "barraBúsqueda barraBúsqueda barraBúsqueda";
-    justify-items: center; }
-  .inicioLogo {
-    margin: 10px; }
-  .botónLogin {
-    margin: 41px;
-    text-align: center; }
-  .iconoAyuda {
-    margin: 41px;
-    display: flex;
-    justify-content: center; }
-  .casillaBúsqueda {
-    width: 350px; } }
-
-@media (min-width: 1000px) {
-  .navBar {
-    grid-template-areas: "logo barraBúsqueda login ayuda";
-    grid-template-columns: 25% 45% 15% 15%;
-    align-items: center; }
-  .inicioLogo {
-    margin-right: 105px; }
-  .casillaBúsqueda {
-    width: 300px;
-    height: 35px; }
-  .botónBúsqueda {
-    padding: 5px;
-    height: 35px; } }
 
 #grillaInicio {
   display: grid;
@@ -319,19 +286,6 @@ h5 {
   border: 5px double #57a68c;
   box-shadow: 5px 5px #6ca290; }
 
-@media (min-width: 640px) {
-  #grillaInicio {
-    display: grid;
-    grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
-  .portadas:hover {
-    transform: scale(1.05);
-    transition-property: all;
-    transition-duration: 0.5s; } }
-
-@media (min-width: 1000px) {
-  .galeríaLibros {
-    grid-template-columns: 1fr 1fr 1fr; } }
-
 .ayudaGrid {
   display: grid;
   grid-template-areas: "títuloAyuda" "guía" "formulario" "exampleAyuda" "preguntasAyuda"; }
@@ -373,10 +327,6 @@ h5 {
   .preguntasAyuda .correoContacto {
     color: #0e5b5b; }
 
-@media (min-width: 1000px) {
-  .ayudaGrid {
-    grid-template-areas: "títuloAyuda títuloAyuda títuloAyuda" "guía formulario exampleAyuda" "guía preguntasAyuda exampleAyuda"; } }
-
 .objetivoComunidad {
   margin: 37px;
   text-align: center;
@@ -397,12 +347,6 @@ h5 {
     padding: 17px;
     text-align: center; }
 
-@media (min-width: 640px) {
-  .botónComunidad:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 0.5s; } }
-
 .formularioLogin {
   margin: 30px;
   border: 5px double palevioletred;
@@ -412,13 +356,8 @@ h5 {
   .formularioLogin .casillasLogin {
     margin: 12px; }
 
-@media (min-width: 640px) {
-  .formularioLogin {
-    margin: 30px 15%; } }
-
-@media (min-width: 1000px) {
-  .formularioLogin {
-    margin: 30px 31%; } }
+.btn {
+  padding: 7px; }
 
 .formulariosLecturas {
   margin: 30px;
@@ -437,19 +376,6 @@ h5 {
 
 .estrellas {
   margin-bottom: 10px; }
-
-@media (min-width: 640px) {
-  .formulariosGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center; } }
-
-@media (min-width: 1000px) {
-  .formulariosLecturas {
-    width: 325px; }
-  .casillasLecturas {
-    width: 300px; } }
 
 .motorNavBar {
   display: flex;
@@ -494,23 +420,6 @@ h5 {
   .formularioMotor .pFormMotor {
     text-align: center; }
 
-@media (min-width: 640px) {
-  .proyectoIbreeds {
-    margin: 60px; }
-  .formularioMotor {
-    margin: 60px; } }
-
-@media (min-width: 1000px) {
-  .motorNavBar {
-    margin: 10px; } }
-
-@media (min-width: 1000px) {
-  .proyectoIbreeds {
-    margin: 70px;
-    grid-template-areas: "título título título" "parrafo1 parrafo1 imagen" "parrafo2 parrafo3 parrafo4"; }
-  .fotmularioMotor {
-    margin: 70px; } }
-
 .videoAviso {
   margin: 75px 40px 40px 40px;
   text-align: left;
@@ -531,26 +440,6 @@ h5 {
     box-shadow: 5px 5px #6ca290;
     display: flex;
     justify-content: center; }
-
-@media (min-width: 640px) {
-  .videos {
-    width: 380px;
-    height: 195px; }
-  iframe {
-    width: 360px;
-    height: 175px; } }
-
-@media (min-width: 1000px) {
-  .galeríaVideos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-  .videos {
-    width: 420px;
-    height: 235px; }
-  iframe {
-    width: 400px;
-    height: 215px; } }
 
 .galeríaTienda {
   display: grid;
@@ -670,6 +559,54 @@ h5 {
   border: 5px double #4b609a; }
 
 @media (min-width: 640px) {
+  nav ul {
+    grid-area: botonesNav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger; }
+  .navBar {
+    grid-template-areas: "login logo ayuda" "barraBúsqueda barraBúsqueda barraBúsqueda";
+    justify-items: center; }
+  .inicioLogo {
+    margin: 10px; }
+  .botónLogin {
+    margin: 41px;
+    text-align: center; }
+  .iconoAyuda {
+    margin: 41px;
+    display: flex;
+    justify-content: center; }
+  .casillaBúsqueda {
+    width: 350px; }
+  #grillaInicio {
+    display: grid;
+    grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
+  .portadas:hover {
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 0.5s; }
+  .botónComunidad:hover {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.5s; }
+  .formularioLogin {
+    margin: 30px 15%; }
+  .formulariosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center; }
+  .proyectoIbreeds {
+    margin: 60px; }
+  .formularioMotor {
+    margin: 60px; }
+  .videos {
+    width: 380px;
+    height: 195px; }
+  iframe {
+    width: 360px;
+    height: 175px; }
   .imagenesMerch:hover {
     transform: scale(1.05);
     transition-property: all;
@@ -680,6 +617,45 @@ h5 {
     transition-duration: 0.5s; } }
 
 @media (min-width: 1000px) {
+  .navBar {
+    grid-template-areas: "logo barraBúsqueda login ayuda";
+    grid-template-columns: 25% 45% 15% 15%;
+    align-items: center; }
+  .inicioLogo {
+    margin-right: 105px; }
+  .casillaBúsqueda {
+    width: 300px;
+    height: 35px; }
+  .botónBúsqueda {
+    padding: 5px;
+    height: 35px; }
+  .galeríaLibros {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .ayudaGrid {
+    grid-template-areas: "títuloAyuda títuloAyuda títuloAyuda" "guía formulario exampleAyuda" "guía preguntasAyuda exampleAyuda"; }
+  .formularioLogin {
+    margin: 30px 31%; }
+  .formulariosLecturas {
+    width: 325px; }
+  .casillasLecturas {
+    width: 300px; }
+  .motorNavBar {
+    margin: 10px; }
+  .proyectoIbreeds {
+    margin: 70px;
+    grid-template-areas: "título título título" "parrafo1 parrafo1 imagen" "parrafo2 parrafo3 parrafo4"; }
+  .fotmularioMotor {
+    margin: 70px; }
+  .galeríaVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .videos {
+    width: 420px;
+    height: 235px; }
+  iframe {
+    width: 400px;
+    height: 215px; }
   .novedadesMes {
     display: flex;
     flex-direction: row; }

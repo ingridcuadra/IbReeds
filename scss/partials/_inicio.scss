@@ -103,25 +103,3 @@
     border: $border3;
     box-shadow: $shadow2;
 }
-@media (min-width:640px){
-    #grillaInicio{
-        display: grid;
-        grid-template-areas:
-        "navBar"
-        "botonesNav"
-        "eslogan"
-        "librosDelMes"
-        "librosMesGrid"
-        "footer";
-    }
-    .portadas:hover{
-        transform: scale(1.05);
-        transition-property: all;
-        transition-duration: 0.5s;
-    }
-}
-@media (min-width:1000px){
-    .galeríaLibros{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}

@@ -20,28 +20,3 @@
         justify-content: center;
     }
 }
-@media (min-width:640px){
-    .videos{
-        width: 380px;
-        height: 195px;
-    }
-    iframe{
-        width: 360px;
-        height: 175px;
-    }
-}
-@media (min-width:1000px){
-    .galeríaVideos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    .videos{
-        width: 420px;
-        height: 235px;
-    }
-    iframe{
-        width:400px;
-        height: 215px;
-    }
-}

@@ -47,11 +47,3 @@
         color: $font-color8;
     }
 }
-@media (min-width:1000px){
-    .ayudaGrid{
-        grid-template-areas:
-        "títuloAyuda títuloAyuda títuloAyuda"
-        "guía formulario exampleAyuda"
-        "guía preguntasAyuda exampleAyuda";
-    }
-}
