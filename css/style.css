@@ -21,7 +21,7 @@ body {
   min-height: 100vh; }
 
 header {
-  background-color: #d5e6eb;
+  background-image: url(../img/backgroundImg.jpg);
   padding: 27px; }
 
 nav ul {
