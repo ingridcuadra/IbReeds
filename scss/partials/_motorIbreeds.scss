@@ -48,28 +48,3 @@
         text-align: center;
     }    
 }
-@media (min-width:640px){
-    .proyectoIbreeds{
-        margin: 60px;
-    }
-    .formularioMotor{
-        margin: 60px;
-    } 
-}
-@media (min-width:1000px){
-    .motorNavBar{
-        margin: 10px;
-    }
-}
-@media (min-width:1000px){
-    .proyectoIbreeds{
-        margin: 70px;
-        grid-template-areas:
-        "título título título"
-        "parrafo1 parrafo1 imagen"
-        "parrafo2 parrafo3 parrafo4";
-    }
-    .fotmularioMotor{
-        margin: 70px;
-    }
-}
