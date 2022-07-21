@@ -42,7 +42,9 @@
     .casillaBúsqueda{
         width: 169px;
         height: 29px;
+        border: $border13;
         border-radius: 7px;
+        background-color: map-get($background-color, "bg0");
     }
 }
 .botónBúsqueda{

@@ -45,7 +45,7 @@ footer {
   bottom: 30px;
   right: 30px;
   background-color: #f3ddbf;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 4px;
   border: 2px double #cc6f7e; }
 
@@ -124,7 +124,9 @@ h5 {
   .barraBúsqueda .casillaBúsqueda {
     width: 169px;
     height: 29px;
-    border-radius: 7px; }
+    border: 2px double #cc6f7e;
+    border-radius: 7px;
+    background-color: #ffe4e8; }
 
 .botónBúsqueda {
   padding: 5px;
@@ -611,7 +613,7 @@ h5 {
     display: flex;
     justify-content: center; }
   .casillaBúsqueda {
-    width: 350px; }
+    width: 650px; }
   #grillaInicio {
     display: grid;
     grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
@@ -659,7 +661,7 @@ h5 {
   .inicioLogo {
     margin-right: 105px; }
   .casillaBúsqueda {
-    width: 300px;
+    width: 600px;
     height: 35px; }
   .botónBúsqueda {
     padding: 5px;
