@@ -612,7 +612,7 @@ h5 {
     display: flex;
     justify-content: center; }
   .casillaBúsqueda {
-    width: 333px; }
+    width: 327px; }
   #grillaInicio {
     display: grid;
     grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
@@ -659,8 +659,6 @@ h5 {
     align-items: center; }
   .inicioLogo {
     margin-right: 105px; }
-  .casillaBúsqueda {
-    width: 327px; }
   .botónBúsqueda {
     padding: 5px;
     height: 35px; }
