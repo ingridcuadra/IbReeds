@@ -224,7 +224,7 @@ h5 {
     color: #000054; }
 
 .portadas {
-  margin: 12px;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   font-size: 23px;
@@ -244,44 +244,50 @@ h5 {
 .galeríaLibros {
   display: grid;
   justify-items: center; }
+  .galeríaLibros .portadasImg {
+    width: 145px;
+    height: 155px; }
+
+.figaptionTítulos {
+  font-size: 17px; }
 
 .autoresArgentinos {
-  margin: 50px;
+  margin: 30px;
   background-color: #fed1d9;
   border-radius: 23px;
   border: 5px double palevioletred;
   box-shadow: 5px 5px #bd718a; }
 
 .ficciónPersonal {
-  margin: 50px;
+  margin: 30px;
   background-color: #bff7e4;
   border-radius: 23px;
   border: 5px double #57a68c;
   box-shadow: 5px 5px #6ca290; }
 
 .distopías {
-  margin: 50px;
+  margin: 30px;
   background-color: #fed1d9;
   border-radius: 23px;
   border: 5px double palevioletred;
   box-shadow: 5px 5px #bd718a; }
 
 .infantiles {
-  margin: 50px;
+  margin: 30px;
   background-color: #bff7e4;
   border-radius: 23px;
   border: 5px double #57a68c;
   box-shadow: 5px 5px #6ca290; }
 
 .fantasía {
-  margin: 50px;
+  margin: 30px;
   background-color: #fed1d9;
   border-radius: 23px;
   border: 5px double palevioletred;
   box-shadow: 5px 5px #bd718a; }
 
 .contextoHistórico {
-  margin: 50px;
+  margin: 30px;
   background-color: #bff7e4;
   border-radius: 23px;
   border: 5px double #57a68c;

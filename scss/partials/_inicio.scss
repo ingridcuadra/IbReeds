@@ -39,7 +39,7 @@
     }
 }
 .portadas{
-    margin: 12px;
+    margin: 10px;
     padding: 10px;
     text-align: center;
     font-size: 23px;
@@ -60,44 +60,51 @@
 .galeríaLibros{
     display: grid;
     justify-items: center;
+    .portadasImg{
+        width: 145px;
+        height: 155px;
+    }
+}
+.figaptionTítulos{
+    font-size: 17px;
 }
 .autoresArgentinos{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .ficciónPersonal{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
     box-shadow: $shadow2;
 }
 .distopías{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .infantiles{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
     box-shadow: $shadow2;
 }
 .fantasía{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg3");
     border-radius: 23px;
     border: $border2;
     box-shadow: $shadow1;
 }
 .contextoHistórico{
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg4");
     border-radius: 23px;
     border: $border3;
