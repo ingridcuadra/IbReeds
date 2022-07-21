@@ -37,6 +37,20 @@
 .parrafoProyecto4{
     grid-area: parrafo4;
 }
+.significadoIbreeds{
+    margin: 30px;
+    background-color: map-get($background-color, "bg11");
+    border-radius: 23px;
+    border: $border11;
+    box-shadow: $shadow2;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    .italicText{
+        font-style: italic;
+        color: $font-color7;
+    }
+}
 .formularioMotor{
     margin: 30px;
     padding: 10px;

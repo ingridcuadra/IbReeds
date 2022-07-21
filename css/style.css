@@ -298,6 +298,7 @@ h5 {
   padding: 21px;
   margin: 30px;
   border: 5px double #ae70d8;
+  border-radius: 23px;
   background-color: #eddcfc;
   box-shadow: 5px 5px #88749a; }
 
@@ -305,10 +306,16 @@ h5 {
   grid-area: formulario;
   margin: 30px;
   border: 5px double #ae70d8;
+  border-radius: 23px;
   background-color: #eddcfc;
   box-shadow: 5px 5px #88749a; }
   .formulario .formularioOpción {
     margin: 17px; }
+    .formulario .formularioOpción .casillaAyuda {
+      padding: 10px;
+      border: 2px double #7586b6;
+      border-radius: 7px;
+      background-color: #d5e6eb; }
 
 .btnAyuda {
   padding: 5px;
@@ -319,6 +326,7 @@ h5 {
   grid-area: exampleAyuda;
   margin: 20px;
   border: 5px double #ae70d8;
+  border-radius: 23px;
   background-color: #eddcfc;
   box-shadow: 5px 5px #88749a; }
 
@@ -351,10 +359,16 @@ h5 {
   margin: 30px;
   border: 5px double palevioletred;
   background-color: #fed1d9;
+  border-radius: 23px;
   box-shadow: 5px 5px #bd718a;
   text-align: center; }
   .formularioLogin .casillasLogin {
     margin: 12px; }
+    .formularioLogin .casillasLogin .casillaLogin {
+      padding: 10px;
+      border: 2px double #7586b6;
+      border-radius: 7px;
+      background-color: #d5e6eb; }
 
 .btn {
   padding: 7px; }
@@ -363,6 +377,7 @@ h5 {
   margin: 30px;
   padding: 10px;
   border: 5px double palevioletred;
+  border-radius: 23px;
   background-color: #fed1d9;
   box-shadow: 5px 5px #bd718a; }
   .formulariosLecturas .títuloLecturas {
@@ -373,6 +388,11 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
+  .casillasLecturas .casillaMisLecturas {
+    padding: 10px;
+    border: 2px double #7586b6;
+    border-radius: 7px;
+    background-color: #d5e6eb; }
 
 .estrellas {
   margin-bottom: 10px; }
@@ -409,6 +429,19 @@ h5 {
 
 .parrafoProyecto4 {
   grid-area: parrafo4; }
+
+.significadoIbreeds {
+  margin: 30px;
+  background-color: #bbeaef;
+  border-radius: 23px;
+  border: 5px double #57a2a6;
+  box-shadow: 5px 5px #6ca290;
+  text-align: center;
+  display: grid;
+  justify-items: center; }
+  .significadoIbreeds .italicText {
+    font-style: italic;
+    color: #00002f; }
 
 .formularioMotor {
   margin: 30px;
@@ -599,6 +632,8 @@ h5 {
     justify-items: center; }
   .proyectoIbreeds {
     margin: 60px; }
+  .significaIbreeds {
+    margin: 60px; }
   .formularioMotor {
     margin: 60px; }
   .videos {
@@ -644,6 +679,8 @@ h5 {
   .proyectoIbreeds {
     margin: 70px;
     grid-template-areas: "título título título" "parrafo1 parrafo1 imagen" "parrafo2 parrafo3 parrafo4"; }
+  .significadoIbreeds {
+    margin: 70px; }
   .fotmularioMotor {
     margin: 70px; }
   .galeríaVideos {

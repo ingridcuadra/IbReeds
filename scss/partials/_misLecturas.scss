@@ -2,6 +2,7 @@
     margin: 30px;
     padding: 10px;
     border: $border2;
+    border-radius: 23px;
     background-color: map-get($background-color, "bg3");
     box-shadow: $shadow1;
     .títuloLecturas{
@@ -13,6 +14,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    .casillaMisLecturas{
+        padding: 10px;
+        border: $border15;
+        border-radius: 7px;
+        background-color: map-get($background-color, "bg1");
+    }
 }
 .estrellas{
     margin-bottom: 10px;

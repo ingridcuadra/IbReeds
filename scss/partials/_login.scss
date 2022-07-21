@@ -2,10 +2,17 @@
     margin: 30px;
     border: $border2;
     background-color: map-get($background-color, "bg3");
+    border-radius: 23px;
     box-shadow: $shadow1;
     text-align: center;
     .casillasLogin{
         margin: 12px;
+        .casillaLogin{
+            padding: 10px;
+            border: $border15;
+            border-radius: 7px;
+            background-color: map-get($background-color, "bg1");
+        }
     }
 }
 .btn{
