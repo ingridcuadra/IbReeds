@@ -14,7 +14,6 @@ body{
     min-height: 100vh;
 }
 header{
-    // background-color: map-get($background-color, "bg1");
     background-image: url(../img/backgroundImg.jpg);
     padding: $padding1;
 }
@@ -29,7 +28,7 @@ a{
 }
 footer{
     grid-area: footer;
-    background-color: map-get($background-color, "bg1");
+    background-image: url(../img/backgroundImg.jpg);
     padding: $padding1;
     margin-top: auto;
     display: flex;
