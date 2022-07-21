@@ -245,8 +245,8 @@ h5 {
   display: grid;
   justify-items: center; }
   .galeríaLibros .portadasImg {
-    width: 145px;
-    height: 155px; }
+    width: 160px;
+    height: 170px; }
 
 .figaptionTítulos {
   font-size: 17px; }
@@ -626,6 +626,20 @@ h5 {
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s; }
+  .figaptionTítulos {
+    font-size: 20px; }
+  .autoresArgentinos {
+    margin: 50px; }
+  .ficciónPersonal {
+    margin: 50px; }
+  .distopías {
+    margin: 50px; }
+  .infantiles {
+    margin: 50px; }
+  .fantasía {
+    margin: 50px; }
+  .contextoHistórico {
+    margin: 50px; }
   .botónComunidad:hover {
     transform: scale(1.1);
     transition-property: all;
