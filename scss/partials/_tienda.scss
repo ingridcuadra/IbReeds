@@ -9,8 +9,8 @@
     "audiolibros"
     "títuloEBooks"
     "ebooks"
-    "títuloMercancía"
-    "mercancía"
+    "títuloMerchandising"
+    "merchandising"
     "títuloExample"
     "example"
     ;
@@ -33,8 +33,8 @@
 .seccionesTienda.títuloEBooks{
     grid-area: títuloEBooks;
 }
-.seccionesTienda.títuloMercancía{
-    grid-area: títuloMercancía;
+.seccionesTienda.títuloMerchandising{
+    grid-area: títuloMerchandising;
 }
 .seccionesTienda.títuloExample{
     grid-area: títuloExample;
@@ -86,8 +86,8 @@
     border:$border8;
     box-shadow: $shadow4;
 }
-.mercancía{
-    grid-area: mercancía;
+.merchandising{
+    grid-area: merchandising;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;

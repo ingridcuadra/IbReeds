@@ -483,7 +483,7 @@ h5 {
 
 .galeríaTienda {
   display: grid;
-  grid-template-areas: "títuloNovedades" "novedades" "títuloBestSeller" "bestSeller" "títuloAudiolibros" "audiolibros" "títuloEBooks" "ebooks" "títuloMercancía" "mercancía" "títuloExample" "example"; }
+  grid-template-areas: "títuloNovedades" "novedades" "títuloBestSeller" "bestSeller" "títuloAudiolibros" "audiolibros" "títuloEBooks" "ebooks" "títuloMerchandising" "merchandising" "títuloExample" "example"; }
 
 .seccionesTienda {
   margin: 5px;
@@ -503,8 +503,8 @@ h5 {
 .seccionesTienda.títuloEBooks {
   grid-area: títuloEBooks; }
 
-.seccionesTienda.títuloMercancía {
-  grid-area: títuloMercancía; }
+.seccionesTienda.títuloMerchandising {
+  grid-area: títuloMerchandising; }
 
 .seccionesTienda.títuloExample {
   grid-area: títuloExample; }
@@ -556,8 +556,8 @@ h5 {
   border: 5px double #c9a0ec;
   box-shadow: 5px 5px #957baa; }
 
-.mercancía {
-  grid-area: mercancía;
+.merchandising {
+  grid-area: merchandising;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -723,7 +723,7 @@ h5 {
   .eBooks {
     display: flex;
     flex-direction: row; }
-  .mercancía {
+  .merchandising {
     display: flex;
     flex-direction: row; }
   .exampleTienda {
