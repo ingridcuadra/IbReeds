@@ -488,7 +488,7 @@ h5 {
     box-shadow: 5px 5px #6ca290;
     display: flex;
     justify-content: center;
-    overflow: hidden; }
+    overflow-x: hidden; }
 
 .galeríaTienda {
   display: grid;
