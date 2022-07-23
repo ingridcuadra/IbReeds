@@ -11,8 +11,8 @@
     "ebooks"
     "títuloMerchandising"
     "merchandising"
-    "títuloExample"
-    "example"
+    "títuloReedsBox"
+    "reedsBox"
     ;
 }
 .seccionesTienda{
@@ -36,18 +36,19 @@
 .seccionesTienda.títuloMerchandising{
     grid-area: títuloMerchandising;
 }
-.seccionesTienda.títuloExample{
-    grid-area: títuloExample;
+.seccionesTienda.títuloReedsBox{
+    grid-area: títuloReedsBox;
 }
 .portadas.grupoC{
     border: $border5;
+    background-color: map-get($background-color, "bg1");
 }
 .novedadesMes{
     grid-area: novedades;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
@@ -58,7 +59,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
@@ -69,7 +70,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
@@ -80,7 +81,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border:$border8;
@@ -91,7 +92,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
@@ -104,27 +105,27 @@
     font-size: 23px;
     width: 57%;
     height: 82%;
-    background-color: map-get($background-color, "bg2");
+    background-color: map-get($background-color, "bg1");
     border: $border6;
 }
-.exampleTienda{
-    grid-area: example;
+.reedsBox{
+    grid-area: reedsBox;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin: 50px;
+    margin: 30px;
     background-color: map-get($background-color, "bg6");
     border-radius: 23px;
     border: $border8;
     box-shadow: $shadow4;
 }
-.exampleImg{
+.reedsBoxImg{
     margin: 12px;
     padding: 10px;
     text-align: center;
     font-size: 23px;
     width: 57%;
     height: 82%;
-    background-color: map-get($background-color, "bg2");
+    background-color: map-get($background-color, "bg1");
     border: $border7;
 }

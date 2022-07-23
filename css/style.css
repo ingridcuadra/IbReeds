@@ -492,7 +492,7 @@ h5 {
 
 .galeríaTienda {
   display: grid;
-  grid-template-areas: "títuloNovedades" "novedades" "títuloBestSeller" "bestSeller" "títuloAudiolibros" "audiolibros" "títuloEBooks" "ebooks" "títuloMerchandising" "merchandising" "títuloExample" "example"; }
+  grid-template-areas: "títuloNovedades" "novedades" "títuloBestSeller" "bestSeller" "títuloAudiolibros" "audiolibros" "títuloEBooks" "ebooks" "títuloMerchandising" "merchandising" "títuloReedsBox" "reedsBox"; }
 
 .seccionesTienda {
   margin: 5px;
@@ -515,18 +515,19 @@ h5 {
 .seccionesTienda.títuloMerchandising {
   grid-area: títuloMerchandising; }
 
-.seccionesTienda.títuloExample {
-  grid-area: títuloExample; }
+.seccionesTienda.títuloReedsBox {
+  grid-area: títuloReedsBox; }
 
 .portadas.grupoC {
-  border: 5px double #aeaeae; }
+  border: 5px double #aeaeae;
+  background-color: #d5e6eb; }
 
 .novedadesMes {
   grid-area: novedades;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
@@ -537,7 +538,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
@@ -548,7 +549,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
@@ -559,7 +560,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
@@ -570,7 +571,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
@@ -583,28 +584,28 @@ h5 {
   font-size: 23px;
   width: 57%;
   height: 82%;
-  background-color: #f3f3f3;
+  background-color: #d5e6eb;
   border: 5px double #4b9a7f; }
 
-.exampleTienda {
-  grid-area: example;
+.reedsBox {
+  grid-area: reedsBox;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 50px;
+  margin: 30px;
   background-color: #ead1fe;
   border-radius: 23px;
   border: 5px double #c9a0ec;
   box-shadow: 5px 5px #957baa; }
 
-.exampleImg {
+.reedsBoxImg {
   margin: 12px;
   padding: 10px;
   text-align: center;
   font-size: 23px;
   width: 57%;
   height: 82%;
-  background-color: #f3f3f3;
+  background-color: #d5e6eb;
   border: 5px double #4b609a; }
 
 @media (min-width: 640px) {
@@ -676,7 +677,7 @@ h5 {
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s; }
-  .exampleImg:hover {
+  .reedsBoxImg:hover {
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s; } }
@@ -742,6 +743,6 @@ h5 {
   .merchandising {
     display: flex;
     flex-direction: row; }
-  .exampleTienda {
+  .reedsBox {
     display: flex;
     flex-direction: row; } }
