@@ -295,7 +295,7 @@ h5 {
 
 .ayudaGrid {
   display: grid;
-  grid-template-areas: "títuloAyuda" "guía" "formulario" "exampleAyuda" "preguntasAyuda"; }
+  grid-template-areas: "títuloAyuda" "guía" "formulario" "publicidadAyuda" "preguntasAyuda"; }
 
 .títuloAyuda {
   grid-area: títuloAyuda; }
@@ -319,6 +319,7 @@ h5 {
   .formulario .formularioOpción {
     margin: 17px; }
     .formulario .formularioOpción .casillaAyuda {
+      width: 190px;
       padding: 10px;
       border: 2px double #7586b6;
       border-radius: 7px;
@@ -329,15 +330,22 @@ h5 {
   display: flex;
   justify-content: start; }
 
-.exampleAyuda {
-  grid-area: exampleAyuda;
-  margin: 20px;
+.publicidadAyuda {
+  grid-area: publicidadAyuda;
+  margin: 50px;
   border: 5px double #ae70d8;
   border-radius: 23px;
   background-color: #eddcfc;
-  box-shadow: 5px 5px #88749a; }
+  box-shadow: 5px 5px #88749a;
+  display: flex;
+  justify-content: center; }
+  .publicidadAyuda .publicidad {
+    width: 171px;
+    height: 500px;
+    padding: 10px; }
 
 .preguntasAyuda {
+  margin-top: 23px;
   grid-area: preguntasAyuda; }
   .preguntasAyuda .correoContacto {
     color: #0e5b5b; }
@@ -685,7 +693,14 @@ h5 {
   .galeríaLibros {
     grid-template-columns: 1fr 1fr 1fr; }
   .ayudaGrid {
-    grid-template-areas: "títuloAyuda títuloAyuda títuloAyuda" "guía formulario exampleAyuda" "guía preguntasAyuda exampleAyuda"; }
+    grid-template-areas: "títuloAyuda títuloAyuda títuloAyuda" "guía preguntasAyuda publicidadAyuda" "formulario preguntasAyuda publicidadAyuda"; }
+  .guía {
+    height: 140px; }
+  .casillaAyuda {
+    width: 300px; }
+  .publicidadAyuda {
+    margin: 30px;
+    height: 520px; }
   .formularioLogin {
     margin: 30px 31%; }
   .formulariosLecturas {

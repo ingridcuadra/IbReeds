@@ -4,7 +4,7 @@
     "títuloAyuda"
     "guía"
     "formulario"
-    "exampleAyuda"
+    "publicidadAyuda"
     "preguntasAyuda";
 }
 .títuloAyuda{
@@ -29,6 +29,7 @@
     .formularioOpción{
         margin: 17px;
         .casillaAyuda{
+            width: 190px;
             padding: 10px;
             border: $border15;
             border-radius: 7px;
@@ -42,15 +43,23 @@
     display: flex;
     justify-content: start;
 }
-.exampleAyuda{
-    grid-area: exampleAyuda;
-    margin: 20px;
+.publicidadAyuda{
+    grid-area: publicidadAyuda;
+    margin: 50px;
     border: $border4;
     border-radius: 23px;
     background-color: map-get($background-color, "bg5");
     box-shadow: $shadow3;
+    display: flex;
+    justify-content: center;
+    .publicidad{
+        width: 171px;
+        height: 500px;
+        padding: 10px;
+    }
 }
 .preguntasAyuda{
+    margin-top: 23px;
     grid-area: preguntasAyuda;
     .correoContacto{
         color: $font-color8;

@@ -127,8 +127,18 @@
     .ayudaGrid{
         grid-template-areas:
         "títuloAyuda títuloAyuda títuloAyuda"
-        "guía formulario exampleAyuda"
-        "guía preguntasAyuda exampleAyuda";
+        "guía preguntasAyuda publicidadAyuda"
+        "formulario preguntasAyuda publicidadAyuda";
+    }
+    .guía{
+        height: 140px;
+    }
+    .casillaAyuda{
+        width: 300px;
+    }
+    .publicidadAyuda{
+        margin: 30px;
+        height: 520px;
     }
     .formularioLogin{
         margin: 30px 31%;
