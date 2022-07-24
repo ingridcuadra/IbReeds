@@ -103,7 +103,8 @@ h5 {
   border: 2px double #86c5a2;
   border-radius: 23px;
   box-shadow: 5px 5px #6ca290;
-  background-color: #96e7cc; }
+  background-color: #96e7cc;
+  transition: 0.5s; }
   .botónLogin:hover {
     background-color: #c0dfd4;
     transform: scale(1.05);
@@ -112,7 +113,8 @@ h5 {
 
 .iconoAyuda {
   grid-area: ayuda;
-  margin: 30px; }
+  margin: 30px;
+  transition: 0.5s; }
   .iconoAyuda:hover {
     transform: scale(1.05);
     transition-property: all;
@@ -144,7 +146,8 @@ h5 {
   border: 2px double #ff7e93;
   border-radius: 23px;
   box-shadow: 5px 5px #6ca290;
-  background-color: pink; }
+  background-color: pink;
+  transition: 0.5s; }
   .navMisLecturas:hover {
     background-color: #ffd1d9;
     transform: scale(1.05);
@@ -159,7 +162,8 @@ h5 {
   border: 2px double #ff7e93;
   border-radius: 23px;
   box-shadow: 5px 5px #6ca290;
-  background-color: pink; }
+  background-color: pink;
+  transition: 0.5s; }
   .navRecomendaciones:hover {
     background-color: #ffd1d9;
     transform: scale(1.05);
@@ -174,7 +178,8 @@ h5 {
   border: 2px double #ff7e93;
   border-radius: 23px;
   box-shadow: 5px 5px #6ca290;
-  background-color: pink; }
+  background-color: pink;
+  transition: 0.5s; }
   .navTienda:hover {
     background-color: #ffd1d9;
     transform: scale(1.05);
@@ -189,7 +194,8 @@ h5 {
   border: 2px double #ff7e93;
   border-radius: 23px;
   box-shadow: 5px 5px #6ca290;
-  background-color: pink; }
+  background-color: pink;
+  transition: 0.5s; }
   .navComunidad:hover {
     background-color: #ffd1d9;
     transform: scale(1.05);
@@ -488,8 +494,7 @@ h5 {
     border: 5px double #57a68c;
     box-shadow: 5px 5px #6ca290;
     display: flex;
-    justify-content: center;
-    overflow-x: hidden; }
+    justify-content: center; }
 
 .galeríaTienda {
   display: grid;
@@ -633,6 +638,8 @@ h5 {
   #grillaInicio {
     display: grid;
     grid-template-areas: "navBar" "botonesNav" "eslogan" "librosDelMes" "librosMesGrid" "footer"; }
+  .portadas {
+    transition: 0.5s; }
   .portadas:hover {
     transform: scale(1.05);
     transition-property: all;
@@ -651,6 +658,8 @@ h5 {
     margin: 50px; }
   .contextoHistórico {
     margin: 50px; }
+  .botónComunidad {
+    transition: 0.5s; }
   .botónComunidad:hover {
     transform: scale(1.1);
     transition-property: all;
@@ -662,6 +671,8 @@ h5 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center; }
+  .formulariosLecturas {
+    width: 220px; }
   .formPorLeer {
     height: 200px; }
   .formMetaLibros {
@@ -678,10 +689,14 @@ h5 {
   iframe {
     width: 360px;
     height: 175px; }
+  .imagenesMerch {
+    transition: 0.5s; }
   .imagenesMerch:hover {
     transform: scale(1.05);
     transition-property: all;
     transition-duration: 0.5s; }
+  .reedsBoxImg {
+    transition: 0.5s; }
   .reedsBoxImg:hover {
     transform: scale(1.05);
     transition-property: all;

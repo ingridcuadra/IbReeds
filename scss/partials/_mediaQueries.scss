@@ -39,6 +39,9 @@
         "librosMesGrid"
         "footer";
     }
+    .portadas{
+        transition: 0.5s;
+    }
     .portadas:hover{
         transform: scale(1.05);
         transition-property: all;
@@ -65,6 +68,9 @@
     .contextoHistórico{
         margin: 50px;
     }
+    .botónComunidad{
+        transition: 0.5s;
+    }
     .botónComunidad:hover{
         transform: scale(1.1);
         transition-property: all;
@@ -78,6 +84,9 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+    }
+    .formulariosLecturas{
+        width: 220px;
     }
     .formPorLeer{
         height: 200px;
@@ -102,10 +111,16 @@
         width: 360px;
         height: 175px;
     }
+    .imagenesMerch{
+        transition: 0.5s;
+    }
     .imagenesMerch:hover{
         transform: scale(1.05);
         transition-property: all;
         transition-duration: 0.5s;
+    }
+    .reedsBoxImg{
+        transition: 0.5s;
     }
     .reedsBoxImg:hover{
         transform: scale(1.05);
